@@ -1,0 +1,172 @@
+{
+  "size": 3,
+  "states": [],
+  "hasEntries": false,
+  "checks": 0,
+  "hints": 0,
+  "excessInputs": 0,
+  "calculations": 0,
+  "cages": {
+    "1": {
+      "cage": 1,
+      "op": 1,
+      "total": 6,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 1
+        }
+      ]
+    },
+    "2": {
+      "cage": 2,
+      "op": 1,
+      "total": 6,
+      "cells": [
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 1
+        }
+      ]
+    },
+    "3": {
+      "cage": 3,
+      "op": 1,
+      "total": 2,
+      "cells": [
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 2
+        }
+      ]
+    },
+    "4": {
+      "cage": 4,
+      "op": 1,
+      "total": 3,
+      "cells": [
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 2,
+          "y": 2
+        }
+      ]
+    }
+  },
+  "answerGrid": [
+    [
+      {
+        "value": 3,
+        "cage": 1
+      },
+      {
+        "value": 1,
+        "cage": 1
+      },
+      {
+        "value": 2,
+        "cage": 2
+      }
+    ],
+    [
+      {
+        "value": 1,
+        "cage": 3
+      },
+      {
+        "value": 2,
+        "cage": 1
+      },
+      {
+        "value": 3,
+        "cage": 2
+      }
+    ],
+    [
+      {
+        "value": 2,
+        "cage": 3
+      },
+      {
+        "value": 3,
+        "cage": 4
+      },
+      {
+        "value": 1,
+        "cage": 4
+      }
+    ]
+  ],
+  "activeGrid": [
+    [
+      {
+        "value": null,
+        "cage": 1,
+        "notes": {}
+      },
+      {
+        "value": null,
+        "cage": 1,
+        "notes": {}
+      },
+      {
+        "value": null,
+        "cage": 2,
+        "notes": {}
+      }
+    ],
+    [
+      {
+        "value": 1,
+        "cage": 3,
+        "notes": {}
+      },
+      {
+        "value": null,
+        "cage": 1,
+        "notes": {}
+      },
+      {
+        "value": null,
+        "cage": 2,
+        "notes": {}
+      }
+    ],
+    [
+      {
+        "value": null,
+        "cage": 3,
+        "notes": {}
+      },
+      {
+        "value": null,
+        "cage": 4,
+        "notes": {}
+      },
+      {
+        "value": null,
+        "cage": 4,
+        "notes": {}
+      }
+    ]
+  ]
+}

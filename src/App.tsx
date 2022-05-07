@@ -1,26 +1,53 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
 
-function App() {
+import { createGrid } from './lib/calcudoco';
+
+export function App() {
+  const grid = createGrid(4);
+  console.log('grid', grid);
   return (
-    <div className="App">
+    <OuterContainer className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
-    </div>
+      <InnerContainer>
+        <GridContainer>
+          {grid.rows.map((gridItem, index) => (
+            <GridRow key={index}>
+              {gridItem.items.map((item, index) => (
+                <Square key={index} />
+              ))}
+            </GridRow>
+          ))}
+        </GridContainer>
+      </InnerContainer>
+    </OuterContainer>
   );
 }
 
-export default App;
+const GridContainer = styled.div``;
+
+const GridRow = styled.div`
+  display: flex;
+`;
+
+const InnerContainer = styled.div`
+  display: flex;
+`;
+
+const OuterContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+`;
+
+const Square = styled.div`
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border: solid 3px blue;
+`;
